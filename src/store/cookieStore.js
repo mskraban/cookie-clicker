@@ -8,6 +8,10 @@ export const useCookieStore = defineStore('cookie', {
                 level: 1,
                 nextLevelPrice: 7
             },
+            autoClick: {
+                level: 1,
+                nextLevelPrice: 20
+            }
         }
     },
     actions:{
@@ -22,6 +26,12 @@ export const useCookieStore = defineStore('cookie', {
         },
         getClickMultiplier() {
             return this.clickMultiplier;
+        },
+        setAutoClick(payload) {
+            this.autoClick = payload;
+        },
+        getAutoClick() {
+            return this.autoClick;
         },
     },
     persist: true,
