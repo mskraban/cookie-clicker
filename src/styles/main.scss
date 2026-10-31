@@ -54,7 +54,7 @@ kbd {
   position: relative;
   height: 100dvh;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 470px);
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 600px);
   gap: 0;
 }
 
@@ -140,19 +140,19 @@ kbd {
   text-shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
 
   &--value {
-    font-size: clamp(34px, 7vw, 68px);
+    font-size: clamp(44px, 8vw, 84px);
     line-height: 1;
     color: #fff;
   }
   &--title {
-    font-size: clamp(16px, 2.6vw, 26px);
+    font-size: clamp(22px, 3.4vw, 34px);
     color: $gold;
   }
   &--cps {
     margin-top: 2px;
     font-family: $body;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 0;
     color: $muted;
     text-shadow: none;
@@ -217,7 +217,7 @@ kbd {
   z-index: 5;
   pointer-events: none;
   font-family: $display;
-  font-size: 26px;
+  font-size: 32px;
   line-height: 1;
   color: #fff;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 211, 77, 0.7);
@@ -233,12 +233,12 @@ kbd {
 }
 
 .click-power {
-  font-size: 14px;
+  font-size: 19px;
   color: $muted;
 
   &.hint {
     display: block !important;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     color: $gold;
     animation: glow 1.2s ease-in-out infinite alternate;
@@ -261,7 +261,7 @@ kbd {
   gap: 8px;
   padding: 5px 12px;
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 19px;
   font-weight: 600;
   background: rgba(255, 211, 77, 0.18);
   border: 1px solid rgba(255, 211, 77, 0.55);
@@ -287,8 +287,8 @@ kbd {
 .golden {
   position: absolute;
   z-index: 6;
-  width: 84px;
-  height: 84px;
+  width: 104px;
+  height: 104px;
   padding: 0;
   border: 0;
   background: none;
@@ -329,8 +329,8 @@ kbd {
 
 .tabs {
   display: flex;
-  gap: 4px;
-  padding: 8px 8px 0;
+  gap: 2px;
+  padding: 8px 6px 0;
   border-bottom: 1px solid $line;
   overflow-x: auto;
   scrollbar-width: none;
@@ -342,13 +342,13 @@ kbd {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  padding: 8px 10px;
+  gap: 5px;
+  padding: 10px 9px;
   border: 1px solid transparent;
   border-bottom: 0;
   border-radius: 10px 10px 0 0;
   background: transparent;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 600;
   color: $muted;
 
@@ -366,7 +366,7 @@ kbd {
     border-radius: 999px;
     background: $gold;
     color: #3a2600;
-    font-size: 11px;
+    font-size: 15px;
     line-height: 18px;
     font-weight: 800;
   }
@@ -387,16 +387,16 @@ kbd {
   align-items: center;
   gap: 6px;
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 18px;
   color: $muted;
 }
 
 .chip {
-  padding: 3px 12px;
+  padding: 5px 16px;
   border-radius: 999px;
   border: 1px solid $line;
   background: $panel-2;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 600;
 
   &.active {
@@ -421,7 +421,7 @@ kbd {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 9px 12px;
+  padding: 12px 14px;
   text-align: left;
   border-radius: 12px;
   border: 1px solid $line;
@@ -450,8 +450,8 @@ kbd {
   }
 
   &--icon {
-    font-size: 30px;
-    width: 40px;
+    font-size: 38px;
+    width: 52px;
     text-align: center;
     flex: none;
   }
@@ -463,11 +463,11 @@ kbd {
   }
   &--name {
     font-family: $display;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 0.03em;
   }
   &--price {
-    font-size: 14px;
+    font-size: 19px;
     font-weight: 700;
     color: $good;
 
@@ -481,16 +481,16 @@ kbd {
     }
   }
   &--desc {
-    font-size: 12px;
-    line-height: 1.35;
+    font-size: 16px;
+    line-height: 1.4;
     color: $muted;
   }
   &--count {
     flex: none;
-    min-width: 36px;
+    min-width: 48px;
     text-align: right;
     font-family: $display;
-    font-size: 30px;
+    font-size: 38px;
     color: rgba(255, 255, 255, 0.35);
   }
 }
@@ -502,7 +502,7 @@ kbd {
   margin: 0 0 6px;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 50px);
+  grid-template-columns: repeat(auto-fill, 64px);
   gap: 6px;
 
   li {
@@ -514,15 +514,15 @@ kbd {
   position: relative;
   display: grid;
   place-items: center;
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   padding: 0;
   border-radius: 10px;
   border: 1px solid $line;
   background: $panel-2;
 
   &--icon {
-    font-size: 26px;
+    font-size: 32px;
   }
   &.affordable {
     border-color: $gold;
@@ -552,14 +552,14 @@ kbd {
     top: calc(100% + 6px);
     left: 50%;
     transform: translateX(-50%);
-    width: 220px;
+    width: 270px;
     padding: 9px 11px;
     border-radius: 10px;
     background: #031a31;
     border: 1px solid rgba(255, 255, 255, 0.28);
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
     text-align: left;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.4;
     color: $text;
     pointer-events: none;
@@ -567,7 +567,7 @@ kbd {
     strong {
       display: block;
       font-family: $display;
-      font-size: 17px;
+      font-size: 21px;
       font-weight: 400;
       letter-spacing: 0.03em;
       color: $gold;
@@ -587,13 +587,13 @@ kbd {
 }
 
 // keep tooltips inside the panel for the left- and right-most columns
-.grid li:nth-child(6n + 1) .tile--tip,
-.grid li:nth-child(6n + 2) .tile--tip {
+.grid li:nth-child(7n + 1) .tile--tip,
+.grid li:nth-child(7n + 2) .tile--tip {
   left: 0;
   transform: none;
 }
-.grid li:nth-child(6n),
-.grid li:nth-child(6n + 5) {
+.grid li:nth-child(7n),
+.grid li:nth-child(7n + 6) {
   .tile--tip {
     left: auto;
     right: 0;
@@ -605,7 +605,7 @@ kbd {
   margin: 14px 0 8px;
   font-family: $display;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 0.04em;
   color: $gold;
 }
@@ -617,12 +617,12 @@ kbd {
 }
 .note {
   margin: 0 0 10px;
-  font-size: 13px;
+  font-size: 18px;
 }
 .empty {
   padding: 24px 8px;
   text-align: center;
-  font-size: 14px;
+  font-size: 19px;
 }
 
 /* ------------------------------------------------------- cards, stats, forms */
@@ -633,7 +633,7 @@ kbd {
   border-radius: 12px;
   border: 1px solid $line;
   background: $panel-2;
-  font-size: 14px;
+  font-size: 19px;
   line-height: 1.5;
 
   .heading {
@@ -672,12 +672,12 @@ kbd {
 }
 
 .btn {
-  padding: 8px 16px;
+  padding: 10px 20px;
   border-radius: 10px;
   border: 1px solid $line;
   background: rgba(255, 255, 255, 0.1);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 19px;
 
   &:hover:not(:disabled) {
     background: rgba(255, 255, 255, 0.2);
@@ -737,7 +737,7 @@ kbd {
   background: rgba(0, 0, 0, 0.3);
   color: $text;
   font-family: ui-monospace, Menlo, Consolas, monospace;
-  font-size: 12px;
+  font-size: 16px;
   resize: vertical;
 }
 
@@ -748,7 +748,7 @@ kbd {
 
 .credit {
   margin: 14px 4px;
-  font-size: 12px;
+  font-size: 16px;
   color: $muted;
   text-align: center;
 }
@@ -775,11 +775,11 @@ kbd {
   border: 1px solid $line;
   background: rgba(2, 20, 40, 0.94);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-  font-size: 13px;
-  line-height: 1.35;
+  font-size: 18px;
+  line-height: 1.4;
 
   &--icon {
-    font-size: 24px;
+    font-size: 30px;
   }
   &.achievement {
     border-color: rgba(110, 231, 160, 0.7);

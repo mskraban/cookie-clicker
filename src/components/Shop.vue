@@ -9,10 +9,12 @@
         role="tab"
         type="button"
         :aria-selected="tab === t.id"
+        :aria-label="t.title || t.label"
+        :title="t.title || t.label"
         @click="tab = t.id"
       >
         <span class="tab--icon">{{ t.icon }}</span>
-        <span class="tab--label">{{ t.label }}</span>
+        <span v-if="t.label" class="tab--label">{{ t.label }}</span>
         <span v-if="t.badge" class="tab--badge">{{ t.badge }}</span>
       </button>
     </nav>
@@ -45,6 +47,6 @@ const tabs = computed(() => [
   { id: 'upgrades', icon: '⚙️', label: 'Upgrades', badge: store.affordableUpgrades },
   { id: 'achievements', icon: '🏆', label: `${store.achievements.length}/${ACHIEVEMENTS.length}`, badge: 0 },
   { id: 'stats', icon: '📊', label: 'Stats', badge: store.pendingChips > 0 ? '!' : 0 },
-  { id: 'settings', icon: '🔧', label: 'Options', badge: 0 },
+  { id: 'settings', icon: '🔧', label: '', title: 'Options', badge: 0 },
 ])
 </script>
