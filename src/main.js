@@ -1,12 +1,9 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+import { inject } from '@vercel/analytics'
 import App from './App.vue'
 import './styles/main.scss'
 
-const pinia = createPinia()
-const app = createApp(App)
+inject() // Vercel Web Analytics: anonymous page views only
 
-pinia.use(piniaPluginPersistedstate)
-app.use(pinia)
-app.mount('#app')
+createApp(App).use(createPinia()).mount('#app')
