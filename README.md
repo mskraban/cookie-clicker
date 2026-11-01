@@ -1,5 +1,7 @@
 # 🍪 Cookie Clicker
 
+**▶ Play it: https://cookie-clicker-s6wu.vercel.app**
+
 A complete incremental game built with **Vue 3**, **Pinia** and **Vite**. Click the cookie, buy buildings and upgrades, catch golden cookies and ascend for permanent bonuses. It saves in your browser, needs no account and works offline once loaded.
 
 ## Features
